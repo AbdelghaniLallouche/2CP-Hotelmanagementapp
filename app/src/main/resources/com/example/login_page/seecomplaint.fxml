@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="238.0" prefWidth="497.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login_page.ShowComplaintdetailsController">
+   <children>
+      <Label layoutX="61.0" layoutY="9.0" text="COMPLAINT DETAILS :">
+         <font>
+            <Font name="Candara Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="200.0" text="DATE :">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="73.0" text="TITLE :">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="120.0" text="CONTENT :">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="title" alignment="TOP_LEFT" layoutX="50.0" layoutY="73.0" prefHeight="45.0" prefWidth="224.0" wrapText="true">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" alignment="TOP_LEFT" layoutX="50.0" layoutY="199.2" prefHeight="33.0" prefWidth="224.0" wrapText="true">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="content" alignment="TOP_LEFT" layoutX="73.0" layoutY="120.5" prefHeight="85.0" prefWidth="199.0" wrapText="true">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <QuadCurve controlX="-235.66664123535156" controlY="-17.99999237060547" endX="91.66668701171875" endY="-333.6666259765625" fill="#4c4cf2" layoutX="425.0" layoutY="115.0" startX="91.66668701171875" startY="347.6666564941406" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="25.0" fitWidth="17.0" layoutX="475.0" layoutY="5.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cross.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="205.0" fitWidth="382.0" layoutX="256.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../an.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

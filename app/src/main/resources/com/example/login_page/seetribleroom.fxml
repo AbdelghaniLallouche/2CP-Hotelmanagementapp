@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login_page.SeeTribleRommController">
+   <children>
+      <QuadCurve controlX="72.33332824707031" controlY="200.0" endX="396.0" endY="-117.0" fill="#4c4cf2" layoutX="131.0" layoutY="100.0" startX="-365.9999694824219" startY="-128.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="283.0" fitWidth="331.0" layoutX="28.0" layoutY="-33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../hotell.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="84.0" layoutY="213.0" text="ROOM DETAILS :" textFill="#4c4cf2">
+         <font>
+            <Font name="Candara Bold" size="20.0" />
+         </font>
+      </Label>
+      <Circle layoutX="33.0" layoutY="260.5" radius="2.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="40.0" layoutY="252.0" text="ROOM NUMBER :">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Circle layoutX="33.0" layoutY="280.5" radius="2.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="40.0" layoutY="272.0" text="ROOM TYPE :">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Circle layoutX="33.0" layoutY="300.5" radius="2.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="40.0" layoutY="292.0" text="ROOM STATUS :">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Circle layoutX="33.0" layoutY="320.5" radius="2.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="40.0" layoutY="312.0" text="BOOKED FROM :">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Circle layoutX="33.0" layoutY="380.5" radius="2.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle layoutX="33.0" layoutY="360.5" radius="2.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle layoutX="33.0" layoutY="340.5" radius="2.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="40.0" layoutY="332.0" text="BOOKED TO :">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="352.0" text="COSTUMER NAME :">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="372.0" text="COSTUMER CARD :">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Circle layoutX="33.0" layoutY="400.5" radius="2.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="40.0" layoutY="392.0" text="COSTUMER PHONE :">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="roomnumber" layoutX="133.0" layoutY="252.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="roomtype" layoutX="112.0" layoutY="272.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="roomstatus" layoutX="127.0" layoutY="292.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="from" layoutX="130.0" layoutY="312.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="to" layoutX="113.0" layoutY="332.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="145.0" layoutY="352.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="card" layoutX="142.0" layoutY="372.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="phone" layoutX="150.0" layoutY="392.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="319.0" layoutY="4.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cross.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="412.0" text="2 COSTUMER NAME :">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="432.0" text="2 COSTUMER CARD :">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="452.0" text="2 COSTUMER PHONE :">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Circle layoutX="33.0" layoutY="440.5" radius="2.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle layoutX="33.0" layoutY="460.5" radius="2.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle layoutX="33.0" layoutY="420.5" radius="2.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label fx:id="scndname" layoutX="152.0" layoutY="412.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="scndcard" layoutX="150.0" layoutY="432.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="scndphone" layoutX="153.0" layoutY="452.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="472.0" text="3 COSTUMER NAME :">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="492.0" text="3 COSTUMER CARD :">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="512.0" text="3 COSTUMER PHONE :">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Circle layoutX="33.0" layoutY="500.5" radius="2.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle layoutX="33.0" layoutY="520.5" radius="2.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle layoutX="33.0" layoutY="480.5" radius="2.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label fx:id="trdname" layoutX="152.0" layoutY="472.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="trdphone" layoutX="157.0" layoutY="512.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="trdcard" layoutX="149.0" layoutY="492.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

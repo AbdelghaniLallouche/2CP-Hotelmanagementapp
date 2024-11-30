@@ -1,0 +1,104 @@
+.button-style-1{
+    -fx-text-fill: white;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #4c4cf2;
+}
+.button-style-1:hover{
+    -fx-background-color: #467cea;
+    -fx-text-fill: white;
+    -fx-animated: fade;
+    -fx-indeterminate-bar-animation-time: 1;
+}
+
+.button-style-2{
+    -fx-text-fill: white;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #4c4cf2;
+}
+.button-style-2:hover{
+    -fx-background-color: #f63a3a;
+    -fx-text-fill: white;
+    -fx-animated: fade;
+    -fx-indeterminate-bar-animation-time: 1;
+}
+
+.button-style-3{
+    -fx-text-fill: white;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #4c4cf2;
+}
+.button-style-3:hover{
+    -fx-background-color: #7171d0;
+    -fx-text-fill: white;
+    -fx-border-radius: 1;
+    -fx-animated: fade;
+    -fx-border-color: lightblue;
+}
+
+.button-style-4{
+    -fx-text-fill: white;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: #4c4cf2;
+}
+.button-style-4:hover{
+    -fx-background-color: #467cea;
+    -fx-text-fill: white;
+    -fx-animated: fade;
+    -fx-indeterminate-bar-animation-time: 1;
+}
+
+.button-style-5{
+    -fx-text-fill: white;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: red;
+}
+.button-style-5:hover{
+    -fx-background-color: #ff4b4b;
+    -fx-text-fill: white;
+    -fx-animated: fade;
+    -fx-indeterminate-bar-animation-time: 1;
+}
+
+.button-style-6{
+    -fx-text-fill: white;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: #03cc03;
+}
+.button-style-6:hover{
+    -fx-background-color: #6cea6c;
+    -fx-text-fill: white;
+    -fx-animated: fade;
+    -fx-indeterminate-bar-animation-time: 1;
+}
+.button-style-7{
+    -fx-text-fill: white;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+    -fx-background-color: #2199ff;
+}
+.button-style-7:hover{
+    -fx-background-color: #63B8FFFF;
+    -fx-text-fill: white;
+    -fx-animated: fade;
+    -fx-background-radius: 3;
+    -fx-indeterminate-bar-animation-time: 2;
+}
+
+.button-style-8{
+    -fx-text-fill: white;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+.button-style-8:hover{
+    -fx-background-color: #f63a3a;
+    -fx-text-fill: white;
+    -fx-animated: fade;
+    -fx-indeterminate-bar-animation-time: 1;
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" prefHeight="480.0" prefWidth="1000.0" styleClass="border" stylesheets="@app.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login_page.ReceptionHomeController">
+   <left>
+   <VBox layoutY="155.0" prefWidth="175.0" style="-fx-background-color: #4c4cf2; -fx-border-color: #bcbcbc; -fx-border-width: 0px 5px 0px 0px;">
+      <Pane prefHeight="100.0" style="-fx-background-color: #4c4cf2;">
+         <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../profile.png" />
+         </ImageView>
+         <Label fx:id="user" layoutX="70.0" layoutY="45.0" prefHeight="13.0" prefWidth="100.0" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="10.0" />
+            </font>
+         </Label>
+         <Label fx:id="username" layoutX="70.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="75.0" layoutY="65.0" text="ACTIVE" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="7.0" />
+            </font>
+         </Label>
+         <Circle fill="#1fff6c" layoutX="70.0" layoutY="70.0" radius="3.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      </Pane>
+         <Rectangle fill="#bcbcbc" height="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+      <Button fx:id="btn1" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SetDashboard" prefHeight="45.0" prefWidth="200.0" styleClass="button-style-3" stylesheets="@../../../Styling.css" text=" DASHBOARD">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn3" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SetManageRooms" prefHeight="45.0" prefWidth="200.0" styleClass="button-style-3" stylesheets="@../../../Styling.css" text=" MANAGE ROOMS" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn5" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SetComplaints" prefHeight="45.0" prefWidth="200.0" styleClass="button-style-3" stylesheets="@../../../Styling.css" text=" COMPLAINTS" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn7" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SetManageUsers" prefHeight="45.0" prefWidth="200.0" styleClass="button-style-3" stylesheets="@../../../Styling.css" text="EDIT INFORMATIONS" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="Container" layoutX="155.0" style="-fx-background-color: white; -fx-border-color: #bcbcbc;" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER" />
+   </center>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <top>
+      <HBox alignment="TOP_RIGHT" prefHeight="40.0" style="-fx-background-color: #4c4cf2; -fx-border-width: 0px 0px 5px 0px; -fx-border-color: #bcbcbc;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="minimizeButton" mnemonicParsing="false" onAction="#onMinimizeButtonClick" prefHeight="15.0" prefWidth="5.0" styleClass="button-style-1" stylesheets="@../../../Styling.css" textFill="#261ebc">
+               <font>
+                  <Font name="Candara Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../dash.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+            <Button fx:id="maximizeButton" mnemonicParsing="false" onAction="#onMaximizeButtonClick" prefHeight="15.0" prefWidth="5.0" styleClass="button-style-1" stylesheets="@../../../Styling.css" textFill="#261ebc">
+               <font>
+                  <Font name="Candara Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../square.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Cancel" prefHeight="15.0" prefWidth="5.0" styleClass="button-style-2" stylesheets="@../../../Styling.css" textFill="#261ebc">
+               <font>
+                  <Font name="Candara Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../cross.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

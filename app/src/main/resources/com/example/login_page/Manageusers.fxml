@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login_page.ManageusersController">
+   <AnchorPane minHeight="50.0" prefHeight="50.0" style="-fx-background-color: #4c4cf2;" VBox.vgrow="NEVER">
+      <children>
+            <Label text="CHANGE YOUR INFORMATIONS" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Candara Bold" size="22.0" />
+               </font>
+            </Label>
+      </children>
+   </AnchorPane>
+   <VBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="NEVER">
+      <children>
+         <HBox alignment="CENTER_LEFT" spacing="10.0">
+            <children>
+                  <Label alignment="CENTER_RIGHT" prefWidth="111.0" text="Username">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username" prefWidth="210.0" style="-fx-background-color: white; -fx-border-width: 0px 0px 1px 0px; -fx-border-color: #4c4cf2;">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="NEVER">
+            <children>
+                  <Label alignment="CENTER_RIGHT" prefWidth="111.0" text="New password">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="pass" prefWidth="210.0" style="-fx-background-color: white; -fx-border-color: #4c4cf2; -fx-border-width: 0px 0px 1px 0px;">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="NEVER">
+            <children>
+                  <Label alignment="CENTER_RIGHT" text="Confirm password">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="repass" prefWidth="210.0" style="-fx-background-color: white; -fx-border-color: #4c4cf2; -fx-border-width: 0px 0px 1px 0px;">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+            </children>
+         </HBox>
+      </children>
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+   </VBox>
+   <HBox alignment="CENTER_RIGHT" minHeight="45.0" prefHeight="45.0" spacing="10.0" style="-fx-border-width: 0px 0px 5px 0px; -fx-border-color: #BCBCBCFF;" VBox.vgrow="NEVER">
+      <children>
+            <Button fx:id="change" mnemonicParsing="false" onAction="#onChange" prefWidth="85.0" styleClass="button-style-4" stylesheets="@../../../Styling.css" text="CHANGE" textFill="WHITE">
+               <font>
+                  <Font name="Candara Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="reset" mnemonicParsing="false" onAction="#onReset" prefWidth="85.0" styleClass="button-style-5" stylesheets="@../../../Styling.css" text="RESET" textFill="WHITE">
+               <font>
+                  <Font name="Candara Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+      </children>
+      <padding>
+         <Insets right="5.0" />
+      </padding>
+   </HBox>
+   <AnchorPane minHeight="50.0" prefHeight="50.0" style="-fx-background-color: #4c4cf2;" VBox.vgrow="NEVER">
+      <children>
+            <Label text="MANAGE USERS" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Candara Bold" size="22.0" />
+               </font>
+            </Label>
+      </children>
+   </AnchorPane>
+   <HBox alignment="CENTER_RIGHT" minHeight="45.0" prefHeight="45.0" spacing="10.0" VBox.vgrow="NEVER">
+      <children>
+            <Button fx:id="adduser" mnemonicParsing="false" onAction="#onAdd" prefWidth="85.0" styleClass="button-style-4" stylesheets="@../../../Styling.css" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="Candara Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="adduser1" mnemonicParsing="false" onAction="#refresh" styleClass="button-style-5" stylesheets="@../../../Styling.css" text="REFRESH" textFill="WHITE">
+               <font>
+                  <Font name="Candara Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+      </children>
+      <padding>
+         <Insets right="5.0" />
+      </padding>
+   </HBox>
+      <TableView fx:id="table" layoutY="316.0" style="-fx-background-color: white;" stylesheets="@tableview.css" VBox.vgrow="ALWAYS">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="57.0" style="-fx-alignment: center; -fx-font-size: 14;" text="ID" />
+            <TableColumn fx:id="user" minWidth="50.0" prefWidth="190.0" style="-fx-alignment: center; -fx-font-size: 14;" text="USERNAME" />
+            <TableColumn fx:id="motpass" minWidth="30.0" prefWidth="155.0" style="-fx-alignment: center; -fx-font-size: 14;" text="PASSWORD" />
+            <TableColumn fx:id="tipe" minWidth="20.0" prefWidth="120.0" style="-fx-alignment: center; -fx-font-size: 14;" text="TYPE" />
+            <TableColumn fx:id="actions" minWidth="60.0" prefWidth="140.0" style="-fx-alignment: center; -fx-font-size: 14;" text="ACTIONS" />
+         </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
+      </TableView>
+</VBox>
